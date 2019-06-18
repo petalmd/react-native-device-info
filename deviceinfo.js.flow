@@ -27,7 +27,6 @@ declare module.exports: {
   isPinOrFingerprintSet: () => (
     cb: (isPinOrFingerprintSet: boolean) => void
   ) => void,
-  hasNotch: () => boolean,
   getFirstInstallTime: () => number,
   getLastUpdateTime: () => number,
   getSerialNumber: () => string,
@@ -41,6 +40,4 @@ declare module.exports: {
   getTotalDiskCapacity: () => number,
   getFreeDiskStorage: () => number,
   getBatteryLevel: () => Promise<number>,
-  isLandscape: () => boolean,
-  isAirPlaneMode: () => Promise<boolean>,
 };
